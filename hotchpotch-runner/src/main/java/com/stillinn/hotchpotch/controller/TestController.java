@@ -17,7 +17,7 @@ public class TestController {
     @RequestMapping("/limit")
     @ResponseBody
     @SentinelLimitAnnotation(resourceName = "controller", limitCount = 2)
-    public String rateLimit() {
+    public String limit() {
         return "OK";
     }
 }
